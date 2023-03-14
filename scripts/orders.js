@@ -35,18 +35,18 @@ const buildOrderListItem = (order) => {
     })
 
     let totalCost = 0
-    if(matchedHead){totalCost += matchedHead.price}
-    if(matchedTorso){totalCost += matchedTorso.price}
-    if(matchedLeg){totalCost += matchedLeg.price}
-    if(matchedTail){totalCost += matchedTail.price}
-    if(matchedArm){totalCost += matchedArm.price}
+    if (matchedHead) { totalCost += matchedHead.price }
+    if (matchedTorso) { totalCost += matchedTorso.price }
+    if (matchedLeg) { totalCost += matchedLeg.price }
+    if (matchedTail) { totalCost += matchedTail.price }
+    if (matchedArm) { totalCost += matchedArm.price }
 
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",
         currency: "USD",
         maximumFractionDigits: 0
     })
-    
+
     return `<li class="order">
                 Order #${order.id} has a ${matchedHead.name} head, a ${matchedTorso.name} torso, ${matchedLeg.name} legs, a ${matchedTail.name} tail, ${matchedArm.name} arms and its special power is ${matchedPower.name}. The final price is ${costString}.
             </li>`

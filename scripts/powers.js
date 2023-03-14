@@ -6,8 +6,8 @@ export const generatePowerList = () => {
         <option value="0">Select a Power</option>
         ${arrayOfPowers.map(obj => {
 
-            return `<option value="${obj.id}">${obj.name}</option>`
-            }).join("")
+        return `<option value="${obj.id}">${obj.name}</option>`
+    }).join("")
         }
             </select>`
 }

@@ -1,31 +1,31 @@
 import { database } from "./database.js";
 
 export const getHeads = () => {
-    return database.heads.map(obj => ({...obj}))
+    return database.heads.map(obj => ({ ...obj }))
 }
 
 export const getTorsos = () => {
-    return database.torsos.map(obj => ({...obj}))
+    return database.torsos.map(obj => ({ ...obj }))
 }
 
 export const getLegs = () => {
-    return database.legs.map(obj => ({...obj}))
+    return database.legs.map(obj => ({ ...obj }))
 }
 
 export const getTails = () => {
-    return database.tails.map(obj => ({...obj}))
+    return database.tails.map(obj => ({ ...obj }))
 }
 
 export const getArms = () => {
-    return database.arms.map(obj => ({...obj}))
+    return database.arms.map(obj => ({ ...obj }))
 }
 
 export const getPowers = () => {
-    return database.powers.map(obj => ({...obj}))
+    return database.powers.map(obj => ({ ...obj }))
 }
 
 export const getOrders = () => {
-    return database.orders.map(obj => ({...obj}))
+    return database.orders.map(obj => ({ ...obj }))
 }
 
 
@@ -65,7 +65,7 @@ export const setPower = (id) => {
 //function that takes temporary choices being stored in the orderBuilder state object and make them permanent.
 export const addCustomOrder = () => {
     // Copy the current state of user choices
-    const newOrder = {...database.chimeraBuilder}
+    const newOrder = { ...database.chimeraBuilder }
 
     // Add a new primary key to the object
     const lastIndex = database.orders.length - 1

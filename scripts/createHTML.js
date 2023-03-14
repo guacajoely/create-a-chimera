@@ -38,7 +38,7 @@ export const createHTML = () => {
             
         </article>
         <article>
-            <button id="createButton">Place Order</button>
+            <button id="createButton">Build Chimera</button>
         </article>
         <article class="orders">
             <h2>Chimeras</h2>
