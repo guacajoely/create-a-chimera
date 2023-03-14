@@ -2,4 +2,42 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  background-color: blanchedalmond;
+}
+
+.options {
+  margin: 1rem;
+  padding: 1rem;
+  border: thin solid rebeccapurple;
+  border-radius: .5rem;
+  box-shadow: .25rem .25rem .5rem rebeccapurple;
+  background-color: lightpink;
+  width: 200px;
+  height: 100px;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 550px;
+}
+
+button {
+  font-size: 22px;
+  margin: 2rem;
+  padding: 0.5rem;
+  background-color: rebeccapurple;
+  border: solid thin black;
+  color: white;
+}
+
+button:active {
+  color: rebeccapurple;
+  background-color: white;
+  border: thin solid rebeccapurple;
+}
+
+.orders{
+  margin-left: 40px;
 }
