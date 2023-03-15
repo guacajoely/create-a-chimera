@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-color: #646C64;
+    text-align: center;
+}
+
+main{
+    width:600px;
+    margin: auto;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.orders{
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 0; 
+}

@@ -10,38 +10,44 @@ import { generatePowerList } from "./powers.js"
 export const createHTML = () => {
     return `
         <h1>Create a Chimera</h1>
-        <article class="choices">
-            <section class="choice_head options">
+        <article class="choices row justify-content-evenly">
+            <section class="choice_head options col-sm-5 card m-2 p-2 text-bg-dark">
                 <h2>Heads</h2>
                 ${generateHeadList()}
             </section>
-            <section class="choice_torso options">
+            <section class="choice_torso options col-sm-5 card m-2 p-2 text-bg-dark">
                 <h2>Torsos</h2>
                 ${generateTorsoList()}
             </section>
-            <section class="choice_leg options">
+        </article>
+
+        <article class="choices row justify-content-evenly">
+            <section class="choice_leg options col-sm-5 card m-2 p-2 text-bg-dark">
                 <h2>Legs</h2>
                 ${generateLegList()}
             </section>
-            <section class="choice_tail options">
+            <section class="choice_tail options col-sm-5 card m-2 p-2 text-bg-dark">
             <h2>Tails</h2>
                 ${generateTailList()}
             </section>
-            <section class="choice_arm options">
+        </article>
+
+        <article class="choices row justify-content-evenly">
+            <section class="choice_arm options col-sm-5 card m-2 p-2 text-bg-dark">
             <h2>Arms</h2>
                 ${generateArmList()}
             </section>
-            <section class="choice_power options">
+            <section class="choice_power options col-sm-5 card m-2 p-2 text-bg-dark">
             <h2>Powers</h2>
                 ${generatePowerList()}
             </section>
-            
         </article>
+
         <article>
-            <button id="createButton">Build Chimera</button>
+            <button id="createButton" class="btn btn-lg btn-dark">Build Chimera</button>
         </article>
         <article class="orders">
-            <h2>Chimeras</h2>
+            <h1>Chimeras</h1>
             ${generateOrdersList()}
         </article>
     `

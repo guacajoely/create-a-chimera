@@ -2,7 +2,7 @@ import { getTails, setTail } from "./dataAccess.js";
 const arrayOfTails = getTails()
 
 export const generateTailList = () => {
-    return `<select id="dropdown-Tails">
+    return `<select id="dropdown-Tails" class='form-select align-self-center' style='width:12rem'>
         <option value="0">Select a Tail</option>
         ${arrayOfTails.map(obj => {
         const price = obj.price.toLocaleString("en-US", {

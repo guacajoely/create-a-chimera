@@ -47,7 +47,7 @@ const buildOrderListItem = (order) => {
         maximumFractionDigits: 0
     })
 
-    return `<li class="order">
+    return `<li class="order card m-2 p-2 text-bg-dark">
                 Order #${order.id} has a ${matchedHead.name} head, a ${matchedTorso.name} torso, ${matchedLeg.name} legs, a ${matchedTail.name} tail, ${matchedArm.name} arms and its special power is ${matchedPower.name}. The final price is ${costString}.
             </li>`
 

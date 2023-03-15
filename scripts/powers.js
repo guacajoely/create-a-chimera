@@ -2,7 +2,7 @@ import { getPowers, setPower } from "./dataAccess.js";
 const arrayOfPowers = getPowers()
 
 export const generatePowerList = () => {
-    return `<select id="dropdown-Powers">
+    return `<select id="dropdown-Powers" class='form-select align-self-center' style='width:12rem'>
         <option value="0">Select a Power</option>
         ${arrayOfPowers.map(obj => {
 

@@ -2,7 +2,7 @@ import { getLegs, setLeg } from "./dataAccess.js";
 const arrayOfLegs = getLegs()
 
 export const generateLegList = () => {
-    return `<select id="dropdown-Legs">
+    return `<select id="dropdown-Legs" class='form-select align-self-center' style='width:12rem'>
         <option value="0">Select a Leg</option>
         ${arrayOfLegs.map(obj => {
         const price = obj.price.toLocaleString("en-US", {
